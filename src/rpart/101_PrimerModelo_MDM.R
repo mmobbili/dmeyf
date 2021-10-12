@@ -34,4 +34,4 @@ dapply[ , Predicted  := as.numeric(prob_baja2 > 0.025) ]
 entrega  <- dapply[   , list(numero_de_cliente, Predicted) ] #genero la salida
 
 #genero el archivo para Kaggle
-fwrite( entrega, file="./kaggle/K101_001.csv", sep="," )
+fwrite( entrega, file="./kaggle/K101_001_MDM.csv", sep="," )
